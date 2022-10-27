@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 랜덤한 수를 하나 뽑아준다.
+        let ranNum =parseInt((Math.random()*100)+1) 
+        // console.log(parseInt((Math.random()*100)+1))
+        // 2. 사용자한테 숫자를 입력받아준다.
+        
+        // 3. 핸던게임 제작
+        //  -> 숫자 > 랜덤 팝업창 '입력한 숫자보다 작은 수 입니다.'
+        //  -> 숫자 < 랜덤 팝업창 '입력한 숫자보다 큰 수 입니다.'
+        //  -> 숫자 = 랜덤 '정답입니다. 축하합니다!'
+        while(true){
+            let num = prompt('숫자를 입력하세요')
+            if (num > ranNum){
+                alert('입력한 숫자보다 작은 수 입니다.😕')
+            }else if(num < ranNum){
+                alert('입력한 숫자보다 큰 수 입니다.😕')
+            }else if(num == ranNum){
+                alert('정답입니다. 축하합니다.👍')
+                console.warn(ranNum,'절대 보지마')
+                break
+            } else{
+                alert('잘못입력하셨습니다.😞')
+            }
+                
+        }
+    </script>
+</body>
+</html>
