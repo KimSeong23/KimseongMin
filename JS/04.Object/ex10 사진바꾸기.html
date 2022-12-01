@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://img.freepik.com/premium-vector/spiral-galaxy-in-outer-space-with-starry-blue-sky-vector-illustration_53562-4247.jpg", width="300px", id="img1">
+    <br>
+    <button onclick="ch()">이미지 변경!</button>
+    <script>
+        let img = document.getElementById('img1')
+        let ch=()=>{
+            // 속성의 값을 변경?
+            // Element.속성이름 = '속성값'
+            // img.src = 'https://imgscience.ytn.co.kr/sciencetv/jpg/vod0082/2019/201912301615053963_h.jpg'
+            
+            // 만약에 ID가 img1인 태그의 src 속성이 1번 사진이라면 => 2번
+            // 만약에 ID가 img1인 태그의 src 속성이 2번 사진이라면 => 1번
+
+            
+            img.src == 'https://imgscience.ytn.co.kr/sciencetv/jpg/vod0082/2019/201912301615053963_h.jpg' ? img.src = 'https://img.freepik.com/premium-vector/spiral-galaxy-in-outer-space-with-starry-blue-sky-vector-illustration_53562-4247.jpg' : img.src = 'https://imgscience.ytn.co.kr/sciencetv/jpg/vod0082/2019/201912301615053963_h.jpg'
+        }
+    </script>
+</body>
+</html>
